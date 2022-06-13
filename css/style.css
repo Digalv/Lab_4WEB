@@ -1,0 +1,63 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+    user-select: none;
+}
+
+input {
+    user-select: none;
+}
+
+.area {
+    background-color: #eee;
+    height: 955px;
+    position: relative;
+}
+
+.area .box {
+    height: 300px;
+    width: 280px;
+    text-align: center;
+    background-color: rgb(42, 104, 4);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5%;
+}
+
+.area .box .note {
+    font-size: larger;
+    color: #fff;
+    font-weight: bold;
+    user-select: none;
+    width: 0%;
+    position: relative;
+    left: 40%;
+}
+
+.btn {
+    position: fixed;
+    z-index: 10;
+    margin-top: 820px;
+    right: 20px;
+    height: 60px;
+    width: 160px;
+    text-align: center;
+    background-color: #b22222;
+    border-radius: 35%;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
