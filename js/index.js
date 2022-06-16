@@ -63,8 +63,10 @@ $area.addEventListener('mousedown', function(e) {
 });
 $area.addEventListener('mouseup', function(e) {
     action = false;
-    boxes[selectedBoxIndex].x = distance.x;
-    boxes[selectedBoxIndex].y = distance.y;
+    try {
+        boxes[selectedBoxIndex].x = distance.x;
+        boxes[selectedBoxIndex].y = distance.y;
+    } catch {}
     setLS('data_coords', boxes);
 });
 $area.addEventListener('mousemove', function(e) {
